@@ -26,14 +26,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="site.js" defer></script>
-</head>
+<style>
+.benefits{background:#1c201f;color:#fff;padding:85px 0 95px;scroll-margin-top:90px}
+.benefits-heading{text-align:center;max-width:800px;margin:0 auto 45px}
+.benefits-heading .eyebrow{justify-content:center;color:#f5cf35;font-size:.7rem}
+.benefits-heading h2{font-size:clamp(2.3rem,4.5vw,4.7rem);font-weight:600;line-height:1.14;letter-spacing:-.05em;margin:20px 0}
+.benefits-heading h2 span{color:#f5cf35}
+.benefits-heading>p:last-child{color:#bfc6c1;font-size:.94rem;line-height:1.8}
+.benefits-grid{padding:0;margin:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 65px}
+.benefit-item{display:grid;grid-template-columns:minmax(110px,37%) minmax(0,1fr);align-items:center;gap:24px;min-height:215px;padding:25px 0;border-bottom:1px solid #ffffff20}
+.benefit-icon{width:100%;height:auto;aspect-ratio:1.15;display:block;overflow:hidden}
+.benefit-number{display:block;color:#f5cf35;font-size:2rem;line-height:1;font-weight:700;margin-bottom:12px;letter-spacing:-.04em}
+.benefit-item h3{font-weight:600;font-size:clamp(1rem,1.7vw,1.45rem);line-height:1.4;letter-spacing:-.025em;max-width:22ch;text-wrap:balance}
+@media(max-width:760px){.benefits{padding:55px 0 65px}.benefits-heading{margin-bottom:25px}.benefits-grid{grid-template-columns:1fr}.benefit-item{grid-template-columns:110px minmax(0,1fr);min-height:150px;gap:22px;padding:22px 0}.benefit-number{font-size:1.5rem;margin-bottom:8px}.benefit-item h3{font-size:1.12rem}.benefits-heading h2{font-size:2.6rem}}
+@media(max-width:360px){.benefit-item{grid-template-columns:90px minmax(0,1fr);gap:16px}.benefit-item h3{font-size:1rem}}
+</style></head>
 <body id="atas">
   <a class="skip-link" href="#kandungan">Langkau ke kandungan</a>
   <header class="header">
     <div class="shell header-inner">
       <a class="brand" href="#atas" aria-label="Kotak Kayu, kembali ke atas"><img src="assets/logo.webp" width="550" height="237" alt="Kotak Kayu Custom Cabinetry"></a>
       <nav class="desktop-nav" aria-label="Menu utama">
-        <a href="#produk">Produk</a><a href="#projek">Projek</a><a href="#kelebihan">Kenapa Kami</a><a href="#servis">Proses</a>
+        <a href="#produk">Produk</a><a href="#projek">Projek</a><a href="#manfaat">Kenapa Kami</a><a href="#servis">Proses</a>
       </nav>
       <a class="button button-yellow header-cta" href="https://wa.me/60108951682?text=Hai%20Kotak%20Kayu%2C%20saya%20nak%20minta%20sebut%20harga%20kabinet.%0AJenis%20ruang%3A%20__%0ALokasi%3A%20__%0AAnggaran%20ukuran%20(jika%20ada)%3A%20__" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20l1.2-4.5a8.5 8.5 0 1 1 16.3-4Z"/><path d="M8.5 9.5h6.7m-6.7 3.2h5"/></svg><span>Bincang Projek</span></a>
     </div>
@@ -59,6 +73,14 @@
 
 
 
+<section class="benefits" id="manfaat" aria-labelledby="benefits-title"><div class="shell"><div class="benefits-heading"><p class="eyebrow">KEYAKINAN BERMULA DI SINI</p><h2 id="benefits-title"><span>8 Sebab Memilih</span><br>Kotak Kayu.</h2><p>Teknologi, perkhidmatan dan perhatian pada setiap projek anda.</p></div><ol class="benefits-grid"><li class="benefit-item"><svg class="benefit-icon" viewBox="35 230 275 255" aria-hidden="true" focusable="false"><image href="assets/benefits-art.jpg" width="1122" height="1402"/></svg><div><span class="benefit-number" aria-hidden="true">01</span><h3>Waranti 12 Bulan Bersijil</h3></div></li>
+<li class="benefit-item"><svg class="benefit-icon" viewBox="585 235 280 250" aria-hidden="true" focusable="false"><image href="assets/benefits-art.jpg" width="1122" height="1402"/></svg><div><span class="benefit-number" aria-hidden="true">02</span><h3>Saluran Khidmat Pelanggan Khusus</h3></div></li>
+<li class="benefit-item"><svg class="benefit-icon" viewBox="25 525 300 240" aria-hidden="true" focusable="false"><image href="assets/benefits-art.jpg" width="1122" height="1402"/></svg><div><span class="benefit-number" aria-hidden="true">03</span><h3>Portal Pemantauan Projek Pelanggan</h3></div></li>
+<li class="benefit-item"><svg class="benefit-icon" viewBox="570 525 300 240" aria-hidden="true" focusable="false"><image href="assets/benefits-art.jpg" width="1122" height="1402"/></svg><div><span class="benefit-number" aria-hidden="true">04</span><h3>Kilang Pembuatan Sendiri</h3></div></li>
+<li class="benefit-item"><svg class="benefit-icon" viewBox="35 790 300 250" aria-hidden="true" focusable="false"><image href="assets/benefits-art.jpg" width="1122" height="1402"/></svg><div><span class="benefit-number" aria-hidden="true">05</span><h3>Mesin Berteknologi Tinggi</h3></div></li>
+<li class="benefit-item"><svg class="benefit-icon" viewBox="585 790 275 250" aria-hidden="true" focusable="false"><image href="assets/benefits-art.jpg" width="1122" height="1402"/></svg><div><span class="benefit-number" aria-hidden="true">06</span><h3>Pemasang Bertauliah</h3></div></li>
+<li class="benefit-item"><svg class="benefit-icon" viewBox="25 1060 300 260" aria-hidden="true" focusable="false"><image href="assets/benefits-art.jpg" width="1122" height="1402"/></svg><div><span class="benefit-number" aria-hidden="true">07</span><h3>Bilik Pameran Sendiri</h3></div></li>
+<li class="benefit-item"><svg class="benefit-icon" viewBox="585 1080 280 245" aria-hidden="true" focusable="false"><image href="assets/benefits-art.jpg" width="1122" height="1402"/></svg><div><span class="benefit-number" aria-hidden="true">08</span><h3>Urusan Lebih Mudah dengan AI</h3></div></li></ol></div></section>
     <section class="brand-intro"><div class="shell intro-grid"><p class="eyebrow">DARI BENGKEL KAMI KE RUMAH ANDA</p><div><h2>Setiap ruang ada cerita.<br>Kami bantu membentuknya.</h2><p>Daripada dapur tempat berkumpul hingga almari yang menyimpan keperluan harian. Kotak Kayu membuat kabinet tempahan khas, mengikut ruang dan kegunaan anda.</p></div></div></section>
     <section class="products" id="produk" aria-labelledby="products-title"><div class="shell">
       <div class="section-intro"><div><p class="eyebrow">RUANG &amp; KOLEKSI</p><h2 id="products-title">Untuk setiap sudut<br>kehidupan anda.</h2></div><p>Terokai hasil kerja kami mengikut ruang yang anda sedang rancang.</p></div>
