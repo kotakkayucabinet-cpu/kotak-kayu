@@ -23,6 +23,7 @@
   {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://kotakkayukabinet.com/#perniagaan","name":"Kotak Kayu","legalName":"Kotak Kayu 4S Enterprise","url":"https://kotakkayukabinet.com/","logo":"https://kotakkayukabinet.com/assets/logo.webp","telephone":"+60108951682","areaServed":{"@type":"State","name":"Negeri Sembilan"}},{"@type":"WebSite","@id":"https://kotakkayukabinet.com/#website","url":"https://kotakkayukabinet.com/","name":"Kotak Kayu","inLanguage":"ms-MY","publisher":{"@id":"https://kotakkayukabinet.com/#perniagaan"}}]}
   </script>
   <link rel="icon" href="assets/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="site.js" defer></script>
 </head>
@@ -32,70 +33,46 @@
     <div class="shell header-inner">
       <a class="brand" href="#atas" aria-label="Kotak Kayu, kembali ke atas"><img src="assets/logo.webp" width="550" height="237" alt="Kotak Kayu Custom Cabinetry"></a>
       <nav class="desktop-nav" aria-label="Menu utama">
-        <a href="#servis">Servis</a><a href="#projek">Projek</a><a href="#tentang">Tentang Kami</a>
+        <a href="#produk">Produk</a><a href="#projek">Projek</a><a href="#kelebihan">Kenapa Kami</a><a href="#servis">Proses</a>
       </nav>
-      <a class="button button-yellow header-cta" href="https://wa.me/60108951682?text=Hai%20Kotak%20Kayu%2C%20saya%20nak%20minta%20sebut%20harga%20kabinet.%0AJenis%20ruang%3A%20__%0ALokasi%3A%20__%0AAnggaran%20ukuran%20(jika%20ada)%3A%20__" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20l1.2-4.5a8.5 8.5 0 1 1 16.3-4Z"/><path d="M8.5 9.5h6.7m-6.7 3.2h5"/></svg><span>WhatsApp</span></a>
+      <a class="button button-yellow header-cta" href="https://wa.me/60108951682?text=Hai%20Kotak%20Kayu%2C%20saya%20nak%20minta%20sebut%20harga%20kabinet.%0AJenis%20ruang%3A%20__%0ALokasi%3A%20__%0AAnggaran%20ukuran%20(jika%20ada)%3A%20__" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20l1.2-4.5a8.5 8.5 0 1 1 16.3-4Z"/><path d="M8.5 9.5h6.7m-6.7 3.2h5"/></svg><span>Bincang Projek</span></a>
     </div>
   </header>
   <main id="kandungan">
     <section class="hero" aria-labelledby="hero-title">
+      <!-- Add the owner-provided film as assets/hero-film.mp4 when available. The photograph remains the fallback. -->
+<video class="hero-film" muted loop playsinline preload="none" aria-hidden="true" hidden></video>
       <img class="hero-photo" src="assets/hero-panel.webp" srcset="assets/hero-panel-small.webp 760w, assets/hero-panel.webp 1280w" sizes="100vw" alt="" fetchpriority="high" decoding="async">
       <div class="shell hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> KOTAK KAYU <b> / </b> NEGERI SEMBILAN</p>
-          <h1 id="hero-title">Kabinet khas.<br><em>Ikut ruang anda.</em></h1>
-          <p class="hero-lede">Kami reka, buat dan pasang kabinet dapur, almari terbina dalam dan panel TV tempahan khas untuk kediaman serta ruang komersial di Negeri Sembilan.</p>
+          <p class="eyebrow">KOTAK KAYU — CUSTOM CABINETRY</p>
+          <h1 id="hero-title">Ruang anda.<br><em>Dibuat khas.</em></h1>
+          <p class="hero-lede">Kabinet dapur, almari dan panel TV yang melengkapkan cara hidup anda. Direka, dibuat dan dipasang di Negeri Sembilan.</p>
           <div class="hero-actions">
-            <a class="button button-yellow" href="https://wa.me/60108951682?text=Hai%20Kotak%20Kayu%2C%20saya%20nak%20minta%20sebut%20harga%20kabinet.%0AJenis%20ruang%3A%20__%0ALokasi%3A%20__%0AAnggaran%20ukuran%20(jika%20ada)%3A%20__" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20l1.2-4.5a8.5 8.5 0 1 1 16.3-4Z"/><path d="M8.5 9.5h6.7m-6.7 3.2h5"/></svg> Minta Sebut Harga</a>
-            <a class="hero-secondary" href="#projek">Lihat Projek <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+            <a class="button button-yellow" href="https://wa.me/60108951682?text=Hai%20Kotak%20Kayu%2C%20saya%20nak%20minta%20sebut%20harga%20kabinet.%0AJenis%20ruang%3A%20__%0ALokasi%3A%20__%0AAnggaran%20ukuran%20(jika%20ada)%3A%20__" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20l1.2-4.5a8.5 8.5 0 1 1 16.3-4Z"/><path d="M8.5 9.5h6.7m-6.7 3.2h5"/></svg> Bincang Projek Anda</a>
+            <a class="hero-secondary" href="#produk">Terokai Produk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
           </div>
         </div>
-        <span class="hero-note"><i></i> Projek Kotak Kayu</span>
+        <span class="hero-note">DIREKA UNTUK RUANG. DIBUAT UNTUK KEHIDUPAN.</span>
       </div>
     </section>
 
-    <section class="workshop-strip" aria-labelledby="machines-title">
-      <div class="shell">
-        <div class="strip-heading">
-          <p class="eyebrow"><span></span> BENGKEL KOTAK KAYU</p>
-          <h2 id="machines-title">Tiga mesin, tiga kerja utama.</h2>
-        </div>
-        <ul class="machine-grid">
-          <li class="machine">
-  <span class="machine-index">01</span>
-  <svg class="machine-art" viewBox="0 0 240 94" fill="none" aria-hidden="true">
-    <path class="draft" d="M14 78h211M22 86h196M27 11v71m186-71v71M16 22h208"/>
-    <path class="machine-body" d="M49 69h143v9H49zM60 69V26h122v43M53 26h137v8H53z"/><path class="workpiece" d="M73 63h94l10 6H63z"/><path class="draft" d="M79 53h82M79 49h82"/><g class="router-head"><path class="machine-accent" d="M108 34h24v15h-24zM116 49h8v10h-8zm4 10v5"/><path class="machine-accent chips" d="m113 64-3-3m17 3 3-3"/></g>
-  </svg>
-  <h3>CNC Router</h3>
-  <p>Memotong dan membentuk panel.</p>
-</li>
-<li class="machine">
-  <span class="machine-index">02</span>
-  <svg class="machine-art" viewBox="0 0 240 94" fill="none" aria-hidden="true">
-    <path class="draft" d="M14 78h211M22 86h196M27 11v71m186-71v71M16 22h208"/>
-    <path class="machine-body" d="M49 69h143v9H49zM55 32h27v37H55zM59 32V25h131v7m-7 0v37"/><path class="workpiece" d="M119 56h59v13h-59z"/><circle class="machine-accent drill-hole" cx="124" cy="62.5" r="2.2"/><g class="drill-head"><path class="machine-accent" d="M83 55h21v14H83zM104 60h10l4 2-4 2h-10m2-4 2 4"/></g>
-  </svg>
-  <h3>CNC Side Drilling</h3>
-  <p>Menggerudi lubang pada sisi panel.</p>
-</li>
-<li class="machine">
-  <span class="machine-index">03</span>
-  <svg class="machine-art" viewBox="0 0 240 94" fill="none" aria-hidden="true">
-    <path class="draft" d="M14 78h211M22 86h196M27 11v71m186-71v71M16 22h208"/>
-    <path class="machine-body" d="M53 31h134v39H53zM65 70v8m108-8v8M46 78h146M65 38h110v22H65z"/><path class="machine-accent" d="M76 49h87"/><g class="edge-wheels"><circle class="machine-accent" cx="93" cy="49" r="6"/><circle class="machine-accent" cx="147" cy="49" r="6"/></g><g class="edge-panel"><path class="workpiece" d="M68 61h77v7H68z"/><path class="machine-accent" d="M69 68h75"/></g>
-  </svg>
-  <h3>Full Machine Edging Machine</h3>
-  <p>Membuat kemasan pada tepi panel.</p>
-</li>
-        </ul>
-      </div>
-    </section>
 
+
+    <section class="brand-intro"><div class="shell intro-grid"><p class="eyebrow">DARI BENGKEL KAMI KE RUMAH ANDA</p><div><h2>Setiap ruang ada cerita.<br>Kami bantu membentuknya.</h2><p>Daripada dapur tempat berkumpul hingga almari yang menyimpan keperluan harian. Kotak Kayu membuat kabinet tempahan khas, mengikut ruang dan kegunaan anda.</p></div></div></section>
+    <section class="products" id="produk" aria-labelledby="products-title"><div class="shell">
+      <div class="section-intro"><div><p class="eyebrow">RUANG &amp; KOLEKSI</p><h2 id="products-title">Untuk setiap sudut<br>kehidupan anda.</h2></div><p>Terokai hasil kerja kami mengikut ruang yang anda sedang rancang.</p></div>
+      <div class="product-grid">
+        <a class="product-tile" href="#projek" data-product-filter="dapur"><img src="assets/dapur-kayu.webp" alt="Kabinet dapur dua tona Kotak Kayu" loading="lazy"><span><small>RUANG MEMASAK</small><h3>Kabinet Dapur</h3><b>Terokai dapur</b></span></a>
+        <a class="product-tile" href="#projek" data-product-filter="bilik"><img src="assets/almari.webp" alt="Almari pakaian terbina dalam" loading="lazy"><span><small>RUANG PERIBADI</small><h3>Almari Pakaian</h3><b>Terokai almari</b></span></a>
+        <a class="product-tile" href="#projek" data-product-filter="tamu"><img src="assets/panel-cahaya.webp" alt="Panel TV berlampu di ruang tamu" loading="lazy"><span><small>RUANG BERSAMA</small><h3>Panel &amp; Kabinet TV</h3><b>Terokai ruang tamu</b></span></a>
+        <a class="product-tile" href="#projek" data-product-filter="komersial"><img src="assets/kaunter-kafe.webp" alt="Kaunter tempahan khas Aurellia Cafe" loading="lazy"><span><small>RUANG PERNIAGAAN</small><h3>Kabinet Komersial</h3><b>Terokai komersial</b></span></a>
+      </div>
+    </div></section>
     <section class="gallery" id="projek" aria-labelledby="projects-title">
       <div class="shell">
         <div class="section-intro">
-          <div><p class="eyebrow"><span></span> PORTFOLIO</p><h2 id="projects-title">Projek mengikut ruang.</h2></div>
+          <div><p class="eyebrow"><span></span> PORTFOLIO</p><h2 id="projects-title">Ruang sebenar.<br>Hasil kerja kami.</h2></div>
           <p>Pilih ruang yang anda sedang rancang dan lihat contoh kabinet yang pernah kami buat.</p>
         </div>
         <div class="gallery-toolbar" id="gallery-tools" hidden>
@@ -171,6 +148,45 @@
       </div>
     </section>
 
+    <section class="why" id="kelebihan"><div class="shell"><p class="eyebrow">KENAPA KOTAK KAYU</p><h2>Idea anda.<br>Keupayaan kami.</h2><div class="why-grid"><article><h3>Mengikut ruang anda.</h3><p>Susun atur kabinet disesuaikan dengan ukuran, kegunaan dan keperluan simpanan anda.</p></article><article><h3>Bengkel kami sendiri.</h3><p>Panel disediakan di bengkel Kotak Kayu di Senawang, mengikut reka bentuk yang dipersetujui.</p></article><article><h3>Reka. Buat. Pasang.</h3><p>Dari perbincangan awal hingga pemasangan, kami membantu merealisasikan kabinet untuk rumah dan premis anda.</p></article></div></div></section>
+    <section class="detail-feature"><img src="assets/dapur-gelap.webp" alt="Perincian kabinet dapur gelap dengan pemegang tona emas" loading="lazy"><div><p class="eyebrow">PERINCIAN YANG MELENGKAPKAN</p><h2>Cantik dipandang.<br>Selesa digunakan.</h2><p>Warna, kemasan dan susunan simpanan membentuk pengalaman harian anda. Bincangkan pilihan yang sesuai dengan ruang, kegunaan dan konsep yang anda inginkan.</p><a class="text-link" href="#hubungi">Bincangkan pilihan kabinet</a></div></section>
+    <section class="workshop-strip" id="bengkel" aria-labelledby="machines-title">
+      <div class="shell">
+        <div class="strip-heading">
+          <p class="eyebrow"><span></span> BENGKEL KOTAK KAYU</p>
+          <h2 id="machines-title">Di sebalik setiap kabinet.</h2>
+        </div>
+        <ul class="machine-grid">
+          <li class="machine">
+  <span class="machine-index">01</span>
+  <svg class="machine-art" viewBox="0 0 240 94" fill="none" aria-hidden="true">
+    <path class="draft" d="M14 78h211M22 86h196M27 11v71m186-71v71M16 22h208"/>
+    <path class="machine-body" d="M49 69h143v9H49zM60 69V26h122v43M53 26h137v8H53z"/><path class="workpiece" d="M73 63h94l10 6H63z"/><path class="draft" d="M79 53h82M79 49h82"/><g class="router-head"><path class="machine-accent" d="M108 34h24v15h-24zM116 49h8v10h-8zm4 10v5"/><path class="machine-accent chips" d="m113 64-3-3m17 3 3-3"/></g>
+  </svg>
+  <h3>CNC Router</h3>
+  <p>Memotong dan membentuk panel.</p>
+</li>
+<li class="machine">
+  <span class="machine-index">02</span>
+  <svg class="machine-art" viewBox="0 0 240 94" fill="none" aria-hidden="true">
+    <path class="draft" d="M14 78h211M22 86h196M27 11v71m186-71v71M16 22h208"/>
+    <path class="machine-body" d="M49 69h143v9H49zM55 32h27v37H55zM59 32V25h131v7m-7 0v37"/><path class="workpiece" d="M119 56h59v13h-59z"/><circle class="machine-accent drill-hole" cx="124" cy="62.5" r="2.2"/><g class="drill-head"><path class="machine-accent" d="M83 55h21v14H83zM104 60h10l4 2-4 2h-10m2-4 2 4"/></g>
+  </svg>
+  <h3>CNC Side Drilling</h3>
+  <p>Menggerudi lubang pada sisi panel.</p>
+</li>
+<li class="machine">
+  <span class="machine-index">03</span>
+  <svg class="machine-art" viewBox="0 0 240 94" fill="none" aria-hidden="true">
+    <path class="draft" d="M14 78h211M22 86h196M27 11v71m186-71v71M16 22h208"/>
+    <path class="machine-body" d="M53 31h134v39H53zM65 70v8m108-8v8M46 78h146M65 38h110v22H65z"/><path class="machine-accent" d="M76 49h87"/><g class="edge-wheels"><circle class="machine-accent" cx="93" cy="49" r="6"/><circle class="machine-accent" cx="147" cy="49" r="6"/></g><g class="edge-panel"><path class="workpiece" d="M68 61h77v7H68z"/><path class="machine-accent" d="M69 68h75"/></g>
+  </svg>
+  <h3>Full Machine Edging Machine</h3>
+  <p>Membuat kemasan pada tepi panel.</p>
+</li>
+        </ul>
+      </div>
+    </section>
     <section class="services" id="servis" aria-labelledby="services-title">
       <div class="shell services-layout">
         <div><p class="eyebrow"><span></span> SERVIS KAMI</p><h2 id="services-title">Dari ukuran<br>hingga pemasangan.</h2></div>
@@ -209,7 +225,7 @@
     </section>
     <section class="contact" id="hubungi" aria-labelledby="contact-title">
       <div class="shell contact-layout">
-        <div><p class="eyebrow"><span></span> MINTA SEBUT HARGA</p><h2 id="contact-title">Ada ruang dalam fikiran?</h2><p>Kongsi jenis ruang, lokasi dan anggaran ukuran jika ada. Anda juga boleh lampirkan gambar ruang dalam WhatsApp.</p></div>
+        <div><p class="eyebrow"><span></span> MINTA SEBUT HARGA</p><h2 id="contact-title">Jom bentuk<br>ruang anda.</h2><p>Kongsi jenis ruang, lokasi dan anggaran ukuran jika ada. Anda juga boleh lampirkan gambar ruang dalam WhatsApp.</p></div>
         <div class="contact-actions">
           <a class="button button-black" href="https://wa.me/60108951682?text=Hai%20Kotak%20Kayu%2C%20saya%20nak%20minta%20sebut%20harga%20kabinet.%0AJenis%20ruang%3A%20__%0ALokasi%3A%20__%0AAnggaran%20ukuran%20(jika%20ada)%3A%20__" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20l1.2-4.5a8.5 8.5 0 1 1 16.3-4Z"/><path d="M8.5 9.5h6.7m-6.7 3.2h5"/></svg> Minta Sebut Harga <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
           <a class="contact-number" href="tel:+60108951682">010-895 1682</a>
@@ -221,7 +237,7 @@
   <footer class="footer">
     <div class="shell footer-inner">
       <a class="brand" href="#atas" aria-label="Kotak Kayu, kembali ke atas"><img src="assets/logo.webp" width="550" height="237" alt="Kotak Kayu Custom Cabinetry"></a>
-      <p>Kotak Kayu 4S Enterprise <span>·</span> Negeri Sembilan</p>
+      <p>Kotak Kayu 4S Enterprise<br>Senawang · Negeri Sembilan<br><a href="tel:+60108951682">010-895 1682</a></p>
       <a class="footer-top" href="#atas">Kembali ke atas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
     </div>
   </footer>
@@ -234,9 +250,10 @@
         <p class="eyebrow"><span></span> <span id="dialog-category"></span></p>
         <h2 id="dialog-title"></h2>
         <p id="dialog-description"></p>
-        <a class="button button-yellow" id="dialog-quote" href="https://wa.me/60108951682?text=Hai%20Kotak%20Kayu%2C%20saya%20nak%20minta%20sebut%20harga%20kabinet.%0AJenis%20ruang%3A%20__%0ALokasi%3A%20__%0AAnggaran%20ukuran%20(jika%20ada)%3A%20__" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20l1.2-4.5a8.5 8.5 0 1 1 16.3-4Z"/><path d="M8.5 9.5h6.7m-6.7 3.2h5"/></svg> Minta Sebut Harga</a>
+        <a class="button button-yellow" id="dialog-quote" href="https://wa.me/60108951682?text=Hai%20Kotak%20Kayu%2C%20saya%20nak%20minta%20sebut%20harga%20kabinet.%0AJenis%20ruang%3A%20__%0ALokasi%3A%20__%0AAnggaran%20ukuran%20(jika%20ada)%3A%20__" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20l1.2-4.5a8.5 8.5 0 1 1 16.3-4Z"/><path d="M8.5 9.5h6.7m-6.7 3.2h5"/></svg> Bincang Projek Anda</a>
       </div>
     </div>
   </dialog>
+<a class="floating-contact" href="#hubungi" aria-label="Hubungi Kotak Kayu">Bincang projek</a>
 </body>
 </html>
