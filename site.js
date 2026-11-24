@@ -73,3 +73,26 @@ if ("IntersectionObserver" in window) {
 } else {
   machineGrid.classList.add("is-visible");
 }
+
+// Product links lead to an already filtered project gallery.
+document.querySelectorAll('[data-product-filter]').forEach(link => {
+  link.addEventListener('click', () => {
+    const target = filters.find(button => button.dataset.filter === link.dataset.productFilter);
+    target?.click();
+  });
+});
+// Optional owner-supplied hero film; retain the photograph until a film is configured.
+const heroFilm = document.querySelector('.hero-film');
+if (heroFilm?.dataset.src && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  heroFilm.src = heroFilm.dataset.src;
+  heroFilm.addEventListener('playing', () => { heroFilm.hidden = false; });
+  heroFilm.play().catch(() => {});
+}
+if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('reveal'); revealObserver.unobserve(entry.target); }
+    });
+  }, {threshold:0.1});
+  document.querySelectorAll('.product-tile, .why-grid article, .intro-grid').forEach(el => revealObserver.observe(el));
+}
